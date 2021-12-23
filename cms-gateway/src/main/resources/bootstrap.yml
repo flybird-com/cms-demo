@@ -1,0 +1,45 @@
+# Tomcat
+server:
+  port: 8080
+
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: cms-gateway
+  profiles:
+    # 环境配置
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: localhost
+        namespace: 84d88a0d-741e-4f8f-94ef-2db57d7e4528
+      config:
+        # 配置中心地址
+        server-addr: localhost
+        # 配置文件格式
+        file-extension: yml
+        namespace: 84d88a0d-741e-4f8f-94ef-2db57d7e4528
+        # 共享配置
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+#    sentinel:
+#      # 取消控制台懒加载
+#      eager: true
+#      transport:
+#        # 控制台地址 sentinel/sentinel
+#        # java -Dserver.port=8718 -Dcsp.sentinel.dashboard.server=localhost:8718 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.8.2.jar > log.log 2>&1 &
+#        dashboard: 127.0.0.1:8718
+#      # nacos配置持久化
+#      datasource:
+#        ds1:
+#          nacos:
+#            server-addr: localhost
+#            dataId: sentinel-ruoyi-gateway
+#            groupId: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow

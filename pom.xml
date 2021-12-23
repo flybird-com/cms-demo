@@ -7,6 +7,7 @@
     <groupId>com.flybird</groupId>
     <artifactId>cms</artifactId>
     <version>3.3.0</version>
+
     <packaging>pom</packaging>
     <name>cms</name>
     <description>微服务系统demo</description>
