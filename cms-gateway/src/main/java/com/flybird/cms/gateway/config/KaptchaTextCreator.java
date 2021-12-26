@@ -7,7 +7,7 @@ import java.util.Random;
 /**
  * @description: 验证码文本生成器
  * @author: flybird
- * @date: 2021/12/23 11:29 下午
+ * @date: 2021-12-26 11:34:44
  */
 public class KaptchaTextCreator extends DefaultTextCreator {
 

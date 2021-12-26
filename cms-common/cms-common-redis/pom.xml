@@ -8,8 +8,22 @@
         <artifactId>cms-common</artifactId>
         <version>3.3.0</version>
     </parent>
-    <artifactId>cms-common-redis</artifactId>
-    <version>3.3.0</version>
-    <name>cms-common-redis</name>
 
+    <artifactId>cms-common-redis</artifactId>
+
+    <dependencies>
+
+        <!-- SpringBoot Boot Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- RuoYi Common Core-->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-core</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>
