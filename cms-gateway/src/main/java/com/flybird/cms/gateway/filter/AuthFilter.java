@@ -5,6 +5,7 @@ import com.flybird.cms.common.core.constant.TokenConstants;
 import com.flybird.cms.common.core.utils.JwtUtils;
 import com.flybird.cms.common.core.utils.ServletUtils;
 import com.flybird.cms.common.core.utils.StringUtils;
+import com.flybird.cms.common.redis.service.RedisService;
 import com.flybird.cms.gateway.config.properties.IgnoreWhiteProperties;
 import io.jsonwebtoken.Claims;
 import org.slf4j.Logger;
@@ -31,6 +32,9 @@ public class AuthFilter implements GlobalFilter, Ordered {
 
     @Autowired
     private IgnoreWhiteProperties ignoreWhiteProperties;
+
+    @Autowired
+    RedisService redisService;
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
