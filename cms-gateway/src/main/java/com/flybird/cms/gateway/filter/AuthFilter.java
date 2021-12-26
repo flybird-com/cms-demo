@@ -1,6 +1,8 @@
 package com.flybird.cms.gateway.filter;
 
+import com.flybird.cms.common.core.constant.CacheConstants;
 import com.flybird.cms.common.core.constant.HttpStatus;
+import com.flybird.cms.common.core.constant.SecurityConstants;
 import com.flybird.cms.common.core.constant.TokenConstants;
 import com.flybird.cms.common.core.utils.JwtUtils;
 import com.flybird.cms.common.core.utils.ServletUtils;
@@ -56,10 +58,33 @@ public class AuthFilter implements GlobalFilter, Ordered {
             return unauthorizedResponse(exchange, "令牌已过期或验证不正确！");
         }
         String userKey = JwtUtils.getUserKey(claims);
-        // 处理异常
-        // redis是否存在user
-        // 从token获取user_key user_id user_name放入headers并移除from-source
-        return null;
+        Boolean isLogin = redisService.hasKey(getTokenKey(userKey));
+        if (!isLogin) {
+            return unauthorizedResponse(exchange, "登录状态已过期");
+        }
+        String userId = JwtUtils.getUserId(claims);
+        String userName = JwtUtils.getUserName(claims);
+        if (StringUtils.isEmpty(userId) || StringUtils.isEmpty(userName)) {
+            return unauthorizedResponse(exchange, "令牌验证失败");
+        }
+        addHeader(mutate, SecurityConstants.USER_KEY, userKey);
+        addHeader(mutate, SecurityConstants.DETAILS_USER_ID, userId);
+        addHeader(mutate, SecurityConstants.DETAILS_USERNAME, userName);
+
+        removeHeader(mutate, SecurityConstants.FROM_SOURCE);
+
+        return chain.filter(exchange.mutate().request(mutate.build()).build());
+    }
+
+    private void removeHeader(ServerHttpRequest.Builder mutate, String name) {
+        mutate.headers(httpHeaders -> httpHeaders.remove(name)).build();
+    }
+
+    private void addHeader(ServerHttpRequest.Builder mutate, String name, Object value) {
+        if (value == null) {
+            return;
+        }
+        mutate.header(name, ServletUtils.urlEncode(value.toString()));
     }
 
     private Mono<Void> unauthorizedResponse(ServerWebExchange exchange, String msg) {
@@ -76,6 +101,13 @@ public class AuthFilter implements GlobalFilter, Ordered {
             }
         }
         return tokenStr;
+    }
+
+    /**
+     * 获取缓存key
+     */
+    private String getTokenKey(String token) {
+        return CacheConstants.LOGIN_TOKEN_KEY + token;
     }
 
     @Override
