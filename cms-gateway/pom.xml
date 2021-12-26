@@ -66,10 +66,10 @@
         </dependency>
 
         <!-- RuoYi Common Redis-->
-<!--        <dependency>-->
-<!--            <groupId>com.ruoyi</groupId>-->
-<!--            <artifactId>ruoyi-common-redis</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-redis</artifactId>
+        </dependency>
 
         <!-- Swagger -->
         <dependency>
