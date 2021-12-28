@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
- * @description: 网关启动程序
+ * description: 网关
+ *
  * @author: flybird
  * @date: 2021/12/23 10:49 下午
  */
