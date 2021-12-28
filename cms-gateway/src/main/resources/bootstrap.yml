@@ -27,19 +27,19 @@ spring:
         # 共享配置
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
-#    sentinel:
-#      # 取消控制台懒加载
-#      eager: true
-#      transport:
-#        # 控制台地址 sentinel/sentinel
-#        # java -Dserver.port=8718 -Dcsp.sentinel.dashboard.server=localhost:8718 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.8.2.jar > log.log 2>&1 &
-#        dashboard: 127.0.0.1:8718
-#      # nacos配置持久化
-#      datasource:
-#        ds1:
-#          nacos:
-#            server-addr: localhost
-#            dataId: sentinel-ruoyi-gateway
-#            groupId: DEFAULT_GROUP
-#            data-type: json
-#            rule-type: flow
+    sentinel:
+      # 取消控制台懒加载
+      eager: true
+      transport:
+        # 控制台地址 sentinel/sentinel
+        # java -Dserver.port=8718 -Dcsp.sentinel.dashboard.server=localhost:8718 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.8.2.jar > log.log 2>&1 &
+        dashboard: 127.0.0.1:8718
+      # nacos配置持久化
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost
+            dataId: sentinel-ruoyi-gateway
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
