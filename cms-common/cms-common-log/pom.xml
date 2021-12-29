@@ -12,4 +12,12 @@
     <version>3.3.0</version>
     <name>cms-common-log</name>
 
+    <dependencies>
+        <!--Common Security -->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-security</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
