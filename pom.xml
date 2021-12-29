@@ -220,40 +220,40 @@
                 <version>${cms.version}</version>
             </dependency>
 
-            <!--            &lt;!&ndash; 接口模块 &ndash;&gt;-->
-            <!--            <dependency>-->
-            <!--                <groupId>com.ruoyi</groupId>-->
-            <!--                <artifactId>ruoyi-common-swagger</artifactId>-->
-            <!--                <version>${ruoyi.version}</version>-->
-            <!--            </dependency>-->
+            <!-- 接口模块 -->
+            <dependency>
+                <groupId>com.flybird</groupId>
+                <artifactId>cms-common-swagger</artifactId>
+                <version>${cms.version}</version>
+            </dependency>
 
-            <!--            &lt;!&ndash; 安全模块 &ndash;&gt;-->
-            <!--            <dependency>-->
-            <!--                <groupId>com.ruoyi</groupId>-->
-            <!--                <artifactId>ruoyi-common-security</artifactId>-->
-            <!--                <version>${ruoyi.version}</version>-->
-            <!--            </dependency>-->
+            <!-- 安全模块 -->
+            <dependency>
+                <groupId>com.flybird</groupId>
+                <artifactId>cms-common-security</artifactId>
+                <version>${cms.version}</version>
+            </dependency>
 
-            <!--            &lt;!&ndash; 权限范围 &ndash;&gt;-->
-            <!--            <dependency>-->
-            <!--                <groupId>com.ruoyi</groupId>-->
-            <!--                <artifactId>ruoyi-common-datascope</artifactId>-->
-            <!--                <version>${ruoyi.version}</version>-->
-            <!--            </dependency>-->
+            <!-- 权限范围 -->
+            <dependency>
+                <groupId>com.flybird</groupId>
+                <artifactId>cms-common-datascope</artifactId>
+                <version>${cms.version}</version>
+            </dependency>
 
-            <!--            &lt;!&ndash; 多数据源 &ndash;&gt;-->
-            <!--            <dependency>-->
-            <!--                <groupId>com.ruoyi</groupId>-->
-            <!--                <artifactId>ruoyi-common-datasource</artifactId>-->
-            <!--                <version>${ruoyi.version}</version>-->
-            <!--            </dependency>-->
+            <!-- 多数据源 -->
+            <dependency>
+                <groupId>com.flybird</groupId>
+                <artifactId>cms-common-datasource</artifactId>
+                <version>${cms.version}</version>
+            </dependency>
 
-            <!--            &lt;!&ndash; 日志记录 &ndash;&gt;-->
-            <!--            <dependency>-->
-            <!--                <groupId>com.ruoyi</groupId>-->
-            <!--                <artifactId>ruoyi-common-log</artifactId>-->
-            <!--                <version>${ruoyi.version}</version>-->
-            <!--            </dependency>-->
+            <!-- 日志记录 -->
+            <dependency>
+                <groupId>com.flybird</groupId>
+                <artifactId>cms-common-log</artifactId>
+                <version>${cms.version}</version>
+            </dependency>
 
             <!-- 缓存服务 -->
             <dependency>
@@ -262,12 +262,12 @@
                 <version>${cms.version}</version>
             </dependency>
 
-            <!--            &lt;!&ndash; 系统接口 &ndash;&gt;-->
-            <!--            <dependency>-->
-            <!--                <groupId>com.ruoyi</groupId>-->
-            <!--                <artifactId>ruoyi-api-system</artifactId>-->
-            <!--                <version>${ruoyi.version}</version>-->
-            <!--            </dependency>-->
+            <!-- 系统接口 -->
+            <dependency>
+                <groupId>com.flybird</groupId>
+                <artifactId>cms-api-system</artifactId>
+                <version>${cms.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

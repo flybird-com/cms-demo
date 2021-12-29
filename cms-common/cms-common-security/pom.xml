@@ -12,4 +12,24 @@
     <version>3.3.0</version>
     <name>cms-common-security</name>
 
+    <dependencies>
+        <!-- Spring Web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <!-- com Api System -->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-api-system</artifactId>
+        </dependency>
+
+        <!-- com Common Redis-->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-redis</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
