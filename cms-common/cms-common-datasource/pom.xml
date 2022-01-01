@@ -12,4 +12,30 @@
     <version>3.3.0</version>
     <name>cms-common-datasource</name>
 
+    <description>
+        cms-common-datasource多数据源
+    </description>
+
+    <dependencies>
+
+        <!-- Druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- Dynamic DataSource -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- SpringBoot Seata -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>
