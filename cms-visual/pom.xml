@@ -15,5 +15,9 @@
         <module>cms-monitor</module>
     </modules>
 
+    <description>
+        cms-visual图形化管理模块
+    </description>
+
 
 </project>
