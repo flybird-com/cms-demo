@@ -12,6 +12,10 @@
     <version>3.3.0</version>
     <name>cms-common-security</name>
 
+    <description>
+        cms-common-security安全模块
+    </description>
+
     <dependencies>
         <!-- Spring Web -->
         <dependency>

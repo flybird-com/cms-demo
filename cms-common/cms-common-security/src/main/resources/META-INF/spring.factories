@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.flybird.cms.common.security.config.WebMvcConfig,\
+  com.flybird.cms.common.security.service.TokenService,\
+  com.flybird.cms.common.security.aspect.PreAuthorizeAspect,\
+  com.flybird.cms.common.security.aspect.InnerAuthAspect,\
+  com.flybird.cms.common.security.handler.GlobalExceptionHandler
