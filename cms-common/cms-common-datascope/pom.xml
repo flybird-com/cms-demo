@@ -12,4 +12,14 @@
     <version>3.3.0</version>
     <name>cms-common-datascope</name>
 
+    <description>
+        cms-common-datascope权限范围
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-security</artifactId>
+        </dependency>
+    </dependencies>
 </project>
