@@ -11,5 +11,84 @@
     <artifactId>cms-system</artifactId>
     <packaging>jar</packaging>
 
+    <description>
+        cms-modules-system系统模块
+    </description>
+
+    <dependencies>
+
+        <!-- SpringCloud Alibaba Nacos -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!-- SpringCloud Alibaba Nacos Config -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- SpringCloud Alibaba Sentinel -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <!-- SpringBoot Actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- Mysql Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.26</version>
+        </dependency>
+
+        <!--  Common DataSource -->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-datasource</artifactId>
+        </dependency>
+
+        <!--  Common DataScope -->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-datascope</artifactId>
+        </dependency>
+
+        <!--  Common Log -->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-log</artifactId>
+        </dependency>
+
+        <!--  Common Swagger -->
+        <dependency>
+            <groupId>com.flybird</groupId>
+            <artifactId>cms-common-swagger</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

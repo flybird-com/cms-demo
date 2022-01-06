@@ -6,8 +6,7 @@ package com.flybird.cms.common.core.constant;
  * @author: flybird
  * @date: 2021-12-26 14:42:12
  */
-public class Constants
-{
+public class Constants {
     /**
      * UTF-8 字符集
      */
@@ -117,6 +116,6 @@ public class Constants
     /**
      * 定时任务违规的字符
      */
-    public static final String[] JOB_ERROR_STR = { "java.net.URL", "javax.naming.InitialContext", "org.yaml.snakeyaml",
-            "org.springframework.jndi" };
+    public static final String[] JOB_ERROR_STR = {"java.net.URL", "javax.naming.InitialContext", "org.yaml.snakeyaml",
+            "org.springframework.jndi"};
 }
