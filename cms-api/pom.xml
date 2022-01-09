@@ -16,7 +16,7 @@
         <module>cms-api-system</module>
     </modules>
 
-    <dependencies>
-    </dependencies>
-
+    <description>
+        cms-api系统接口
+    </description>
 </project>

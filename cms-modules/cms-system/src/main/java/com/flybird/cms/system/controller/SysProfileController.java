@@ -9,6 +9,7 @@ import com.flybird.cms.common.log.annotation.Log;
 import com.flybird.cms.common.log.enums.BusinessType;
 import com.flybird.cms.common.security.service.TokenService;
 import com.flybird.cms.common.security.utils.SecurityUtils;
+import com.flybird.cms.system.api.RemoteFileService;
 import com.flybird.cms.system.api.domain.SysFile;
 import com.flybird.cms.system.api.domain.SysUser;
 import com.flybird.cms.system.api.model.LoginUser;

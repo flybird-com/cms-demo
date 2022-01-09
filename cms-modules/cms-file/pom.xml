@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cms-file</artifactId>
-    <packaging>jar</packaging>
 
     <description>
         cms-modules-file文件服务
@@ -51,15 +50,16 @@
         <dependency>
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
+            <version>${minio.version}</version>
         </dependency>
 
-        <!-- RuoYi Api System -->
+        <!--  Api System -->
         <dependency>
             <groupId>com.flybird</groupId>
             <artifactId>cms-api-system</artifactId>
         </dependency>
 
-        <!-- RuoYi Common Swagger -->
+        <!--  Common Swagger -->
         <dependency>
             <groupId>com.flybird</groupId>
             <artifactId>cms-common-swagger</artifactId>
@@ -83,5 +83,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

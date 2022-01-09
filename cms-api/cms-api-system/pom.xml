@@ -9,8 +9,10 @@
         <version>3.3.0</version>
     </parent>
     <artifactId>cms-api-system</artifactId>
-    <version>3.3.0</version>
-    <name>cms-api-system</name>
+
+    <description>
+        cms-api-system系统接口模块
+    </description>
 
     <dependencies>
         <!-- Common Core-->

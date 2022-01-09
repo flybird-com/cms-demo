@@ -1,5 +1,6 @@
 package com.flybird.cms.file.config;
 
+import io.minio.MinioClient;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

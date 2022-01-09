@@ -10,6 +10,8 @@ import com.flybird.cms.common.core.utils.ServletUtils;
 import com.flybird.cms.common.core.utils.StringUtils;
 import com.flybird.cms.common.core.utils.ip.IpUtils;
 import com.flybird.cms.common.security.utils.SecurityUtils;
+import com.flybird.cms.system.api.RemoteLogService;
+import com.flybird.cms.system.api.RemoteUserService;
 import com.flybird.cms.system.api.domain.SysLogininfor;
 import com.flybird.cms.system.api.domain.SysUser;
 import com.flybird.cms.system.api.model.LoginUser;

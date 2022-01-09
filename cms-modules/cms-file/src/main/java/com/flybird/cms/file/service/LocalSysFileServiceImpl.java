@@ -3,6 +3,7 @@ package com.flybird.cms.file.service;
 import com.flybird.cms.file.utils.FileUploadUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * description: 本地文件存储

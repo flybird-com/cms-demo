@@ -1,5 +1,7 @@
 package com.flybird.cms.file.service;
 
+import org.springframework.web.multipart.MultipartFile;
+
 /**
  * description: 文件上传接口
  *

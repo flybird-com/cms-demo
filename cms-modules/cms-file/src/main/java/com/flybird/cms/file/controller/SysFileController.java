@@ -1,9 +1,15 @@
 package com.flybird.cms.file.controller;
 
+import com.flybird.cms.common.core.domain.R;
+import com.flybird.cms.common.core.utils.file.FileUtils;
 import com.flybird.cms.file.service.ISysFileService;
+import com.flybird.cms.system.api.domain.SysFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * description: 文件请求处理

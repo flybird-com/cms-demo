@@ -1,8 +1,14 @@
 package com.flybird.cms.file.utils;
 
-import org.springframework.cloud.commons.util.IdUtils;
-import org.springframework.util.MimeTypeUtils;
+import com.flybird.cms.common.core.exception.file.FileNameLengthLimitExceededException;
+import com.flybird.cms.common.core.exception.file.FileSizeLimitExceededException;
+import com.flybird.cms.common.core.exception.file.InvalidExtensionException;
+import com.flybird.cms.common.core.utils.DateUtils;
+import com.flybird.cms.common.core.utils.IdUtils;
+import com.flybird.cms.common.core.utils.file.MimeTypeUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;

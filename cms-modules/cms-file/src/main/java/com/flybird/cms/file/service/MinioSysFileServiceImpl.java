@@ -2,9 +2,12 @@ package com.flybird.cms.file.service;
 
 import com.flybird.cms.file.config.MinioConfig;
 import com.flybird.cms.file.utils.FileUploadUtils;
+import io.minio.MinioClient;
+import io.minio.PutObjectArgs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * Minio 文件存储

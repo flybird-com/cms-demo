@@ -1,6 +1,7 @@
 package com.flybird.cms.common.log.service;
 
 import com.flybird.cms.common.core.constant.SecurityConstants;
+import com.flybird.cms.system.api.RemoteLogService;
 import com.flybird.cms.system.api.domain.SysOperLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
